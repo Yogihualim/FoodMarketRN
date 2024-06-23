@@ -72,7 +72,6 @@ const BottomNavigator = ({state, descriptors, navigation}) => {
             onPress={onPress}
             onLongPress={onLongPress}>
             <Icon label={label} focus={isFocused} />
-            <Text>{label}</Text>
           </TouchableOpacity>
         );
       })}
@@ -88,7 +87,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     paddingTop: 15,
     paddingBottom: 13,
-    paddingHorizontal: 50,
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
   },
 });
