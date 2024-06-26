@@ -1,12 +1,12 @@
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
+import {StyleSheet, TouchableOpacity, View} from 'react-native';
 import {
-  IcHomeOn,
-  IcOrderOn,
-  IcProfileOn,
   IcHomeOff,
+  IcHomeOn,
   IcOrderOff,
+  IcOrderOn,
   IcProfileOff,
+  IcProfileOn,
 } from '../../../assets';
 
 const Icon = ({label, focus}) => {
@@ -20,7 +20,6 @@ const Icon = ({label, focus}) => {
     default:
       return <IcOrderOn />;
   }
-  return <IcOrderOn />;
 };
 
 const BottomNavigator = ({state, descriptors, navigation}) => {

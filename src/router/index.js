@@ -10,6 +10,7 @@ import {
   Home,
   Order,
   Profile,
+  FoodDetail,
 } from '../pages';
 import {BottomNavigator} from '../components';
 // import 'react-native-gesture-handler';
@@ -66,6 +67,11 @@ const Router = () => {
       <Stack.Screen
         name="MainApp"
         component={MainApp}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="FoodDetail"
+        component={FoodDetail}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

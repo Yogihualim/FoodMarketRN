@@ -2,13 +2,22 @@ import React from 'react';
 import {Image, StyleSheet, View, Text} from 'react-native';
 import Rating from '../Rating';
 
-const FoodCard = ({image}) => {
+const FoodCard = ({image, text, price}) => {
   return (
     <View style={styles.container}>
       <Image source={image} style={styles.image} />
       <View style={styles.content}>
-        <Text style={styles.text}>Cherry Healthy</Text>
+        <Text style={styles.text}>{text}</Text>
         <Rating />
+        <Text
+          style={{
+            fontFamily: 'Poppins-Regular',
+            fontSize: 13,
+            color: '#8D92A3',
+            justifyContent: 'flex-end',
+          }}>
+          {price}
+        </Text>
       </View>
     </View>
   );

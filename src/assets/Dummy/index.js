@@ -6,6 +6,7 @@ import FoodDummy4 from './food_dummy4.png';
 import FoodDummy5 from './food_dummy5.png';
 import FoodDummy6 from './food_dummy6.png';
 import FoodDummy7 from './food_dummy7.png';
+import FoodDummy8 from './food_dummy8.png';
 
 export {
   ProfileDummy,
@@ -16,4 +17,5 @@ export {
   FoodDummy5,
   FoodDummy6,
   FoodDummy7,
+  FoodDummy8,
 };

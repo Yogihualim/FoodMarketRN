@@ -2,6 +2,7 @@ import {StyleSheet, Text, View, Dimensions, Image} from 'react-native';
 import React from 'react';
 import {TabView, SceneMap, TabBar} from 'react-native-tab-view';
 import ItemListFood from '../ItemListFood';
+import {useNavigation} from '@react-navigation/native';
 import {
   FoodDummy1,
   FoodDummy2,
@@ -19,7 +20,7 @@ const renderTabBar = props => (
       height: 3,
       width: '0.2%',
     }}
-    style={{backgroundColor: 'white'}}
+    style={{backgroundColor: 'white', elevation: 0}}
     tabStyle={{width: 'auto'}}
     renderLabel={({route, focused, color}) => (
       <Text
@@ -34,39 +35,120 @@ const renderTabBar = props => (
 );
 
 const NewTaste = () => {
+  const navigation = useNavigation();
   return (
-    <View style={{paddingVertical: 8}}>
-      <ItemListFood image={FoodDummy1} />
-      <ItemListFood image={FoodDummy2} />
-      <ItemListFood image={FoodDummy3} />
-      <ItemListFood image={FoodDummy4} />
-      <ItemListFood image={FoodDummy5} />
-      <ItemListFood image={FoodDummy6} />
+    <View style={{paddingVertical: 3}}>
+      <ItemListFood
+        image={FoodDummy1}
+        text={'Salad Sehat'}
+        price={'IDR 49.000'}
+        onPress={() => navigation.navigate('FoodDetail')}
+      />
+      <ItemListFood
+        image={FoodDummy2}
+        text={'Soup Bumil'}
+        price={'IDR 69.000'}
+        onPress={() => navigation.navigate('FoodDetail')}
+      />
+      <ItemListFood
+        image={FoodDummy3}
+        text={'Avocado Salad'}
+        price={'IDR 49.000'}
+        onPress={() => navigation.navigate('FoodDetail')}
+      />
+      <ItemListFood
+        image={FoodDummy4}
+        text={'Ice Cream Walls'}
+        price={'IDR 9.000'}
+        onPress={() => navigation.navigate('FoodDetail')}
+      />
+      <ItemListFood
+        image={FoodDummy5}
+        text={'Ice Coffee Latte '}
+        price={'IDR 6.000'}
+        onPress={() => navigation.navigate('FoodDetail')}
+      />
+      <ItemListFood
+        image={FoodDummy6}
+        text={'Bawang Kupas/100gr'}
+        price={'IDR 4.900'}
+        onPress={() => navigation.navigate('FoodDetail')}
+      />
     </View>
   );
 };
 
 const Popular = () => {
+  const navigation = useNavigation();
   return (
-    <View style={{paddingVertical: 8}}>
-      <ItemListFood image={FoodDummy1} />
-      <ItemListFood image={FoodDummy2} />
-      <ItemListFood image={FoodDummy3} />
-      <ItemListFood image={FoodDummy4} />
-      <ItemListFood image={FoodDummy5} />
-      <ItemListFood image={FoodDummy6} />
+    <View style={{paddingVertical: 3}}>
+      <ItemListFood
+        image={FoodDummy1}
+        text={'Salad Sehat'}
+        price={'IDR 49.000'}
+      />
+      <ItemListFood
+        image={FoodDummy2}
+        text={'Soup Bumil'}
+        price={'IDR 69.000'}
+      />
+      <ItemListFood
+        image={FoodDummy3}
+        text={'Avocado Salad'}
+        price={'IDR 49.000'}
+      />
+      <ItemListFood
+        image={FoodDummy4}
+        text={'Ice Cream Walls'}
+        price={'IDR 9.000'}
+      />
+      <ItemListFood
+        image={FoodDummy5}
+        text={'Ice Coffee Latte '}
+        price={'IDR 6.000'}
+      />
+      <ItemListFood
+        image={FoodDummy6}
+        text={'Bawang Kupas/100gr'}
+        price={'IDR 4.900'}
+      />
     </View>
   );
 };
 const Recommended = () => {
+  const navigation = useNavigation();
   return (
-    <View style={{paddingVertical: 8}}>
-      <ItemListFood image={FoodDummy1} />
-      <ItemListFood image={FoodDummy2} />
-      <ItemListFood image={FoodDummy3} />
-      <ItemListFood image={FoodDummy4} />
-      <ItemListFood image={FoodDummy5} />
-      <ItemListFood image={FoodDummy6} />
+    <View style={{paddingVertical: 3}}>
+      <ItemListFood
+        image={FoodDummy1}
+        text={'Salad Sehat'}
+        price={'IDR 49.000'}
+      />
+      <ItemListFood
+        image={FoodDummy2}
+        text={'Soup Bumil'}
+        price={'IDR 69.000'}
+      />
+      <ItemListFood
+        image={FoodDummy3}
+        text={'Avocado Salad'}
+        price={'IDR 49.000'}
+      />
+      <ItemListFood
+        image={FoodDummy4}
+        text={'Ice Cream Walls'}
+        price={'IDR 9.000'}
+      />
+      <ItemListFood
+        image={FoodDummy5}
+        text={'Ice Coffee Latte '}
+        price={'IDR 6.000'}
+      />
+      <ItemListFood
+        image={FoodDummy6}
+        text={'Bawang Kupas/100gr'}
+        price={'IDR 4.900'}
+      />
     </View>
   );
 };

@@ -12,10 +12,26 @@ const Home = () => {
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             <View style={styles.foodCardContainer}>
               <Gap width={24} />
-              <FoodCard image={FoodDummy1} />
-              <FoodCard image={FoodDummy7} />
-              <FoodCard image={FoodDummy2} />
-              <FoodCard image={FoodDummy4} />
+              <FoodCard
+                image={FoodDummy1}
+                text={'Salad Sehat'}
+                price={'IDR 49.000'}
+              />
+              <FoodCard
+                image={FoodDummy7}
+                text={'Soup Bumil'}
+                price={'IDR 69.000'}
+              />
+              <FoodCard
+                image={FoodDummy2}
+                text={'Paket Burger'}
+                price={'IDR 109.000'}
+              />
+              <FoodCard
+                image={FoodDummy4}
+                text={'Ice Cream Walls'}
+                price={'IDR 9.000'}
+              />
             </View>
           </ScrollView>
         </View>
