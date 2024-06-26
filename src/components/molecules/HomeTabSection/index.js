@@ -37,38 +37,44 @@ const renderTabBar = props => (
 const NewTaste = () => {
   const navigation = useNavigation();
   return (
-    <View style={{paddingVertical: 3}}>
+    <View style={styles.container}>
       <ItemListFood
+        rating={3}
         image={FoodDummy1}
         text={'Salad Sehat'}
         price={'IDR 49.000'}
         onPress={() => navigation.navigate('FoodDetail')}
       />
       <ItemListFood
+        rating={3}
         image={FoodDummy2}
         text={'Soup Bumil'}
         price={'IDR 69.000'}
         onPress={() => navigation.navigate('FoodDetail')}
       />
       <ItemListFood
+        rating={3}
         image={FoodDummy3}
         text={'Avocado Salad'}
         price={'IDR 49.000'}
         onPress={() => navigation.navigate('FoodDetail')}
       />
       <ItemListFood
+        rating={3}
         image={FoodDummy4}
         text={'Ice Cream Walls'}
         price={'IDR 9.000'}
         onPress={() => navigation.navigate('FoodDetail')}
       />
       <ItemListFood
+        rating={3}
         image={FoodDummy5}
         text={'Ice Coffee Latte '}
         price={'IDR 6.000'}
         onPress={() => navigation.navigate('FoodDetail')}
       />
       <ItemListFood
+        rating={3}
         image={FoodDummy6}
         text={'Bawang Kupas/100gr'}
         price={'IDR 4.900'}
@@ -81,7 +87,7 @@ const NewTaste = () => {
 const Popular = () => {
   const navigation = useNavigation();
   return (
-    <View style={{paddingVertical: 3}}>
+    <View style={styles.container}>
       <ItemListFood
         image={FoodDummy1}
         text={'Salad Sehat'}
@@ -118,7 +124,7 @@ const Popular = () => {
 const Recommended = () => {
   const navigation = useNavigation();
   return (
-    <View style={{paddingVertical: 3}}>
+    <View style={styles.container}>
       <ItemListFood
         image={FoodDummy1}
         text={'Salad Sehat'}
@@ -182,4 +188,10 @@ const HomeTabSection = () => {
 
 export default HomeTabSection;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'white',
+    paddingHorizontal: 24,
+    paddingVertical: 3,
+  },
+});

@@ -3,7 +3,7 @@ import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import Rating from '../Rating';
 import typescript from 'react-native-svg';
 
-const ItemListFood = ({image, text, price, onPress}) => {
+const ItemListFood = ({image, text, price, onPress, items, rating}) => {
   return (
     <TouchableOpacity activeOpacity={0.7} onPress={onPress}>
       <View style={styles.container}>
@@ -12,7 +12,8 @@ const ItemListFood = ({image, text, price, onPress}) => {
           <Text style={styles.title}>{text}</Text>
           <Text style={styles.price}>{price}</Text>
         </View>
-        <Rating />
+        {items && !rating && <Text style={styles.items}>{items} items</Text>}
+        {rating && !items && <Rating />}
       </View>
     </TouchableOpacity>
   );
@@ -24,7 +25,6 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     backgroundColor: 'white',
-    paddingHorizontal: 24,
     paddingVertical: 8,
     alignItems: 'center',
   },
@@ -45,5 +45,10 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-Regular',
     fontSize: 13,
     color: '#8D92A3',
+  },
+  items: {
+    fontSize: 13,
+    fontFamily: 'Poppins-Regular',
+    color: '#020202',
   },
 });
