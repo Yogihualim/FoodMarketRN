@@ -1,3 +1,5 @@
 import Logo from './Logo.svg';
 import ILSuccessSignUp from './ILSuccessSignUp';
-export {Logo, ILSuccessSignUp};
+import ILSuccessOrder from './ILSuccessOrder';
+
+export {Logo, ILSuccessSignUp, ILSuccessOrder};

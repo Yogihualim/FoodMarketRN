@@ -12,9 +12,9 @@ import {
   Profile,
   FoodDetail,
   OrderSummary,
+  SuccessOrder,
 } from '../pages';
 import {BottomNavigator} from '../components';
-// import 'react-native-gesture-handler';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -78,6 +78,11 @@ const Router = () => {
       <Stack.Screen
         name="OrderSummary"
         component={OrderSummary}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="SuccessOrder"
+        component={SuccessOrder}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
