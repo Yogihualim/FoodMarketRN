@@ -38,10 +38,13 @@ const FoodDetail = ({navigation}) => {
         <View style={styles.footer}>
           <View style={styles.priceContainer}>
             <Text style={styles.labelTotal}>Total Price:</Text>
-            <Text style={styles.priceTotal}>IDR 12.289.000</Text>
+            <Text style={styles.priceTotal}>IDR 686.000</Text>
           </View>
           <View style={styles.button}>
-            <Button text="Order Now" onPress={() => navigation.navigate('OrderSummary')} />
+            <Button
+              text="Order Now"
+              onPress={() => navigation.navigate('OrderSummary')}
+            />
           </View>
         </View>
       </View>
