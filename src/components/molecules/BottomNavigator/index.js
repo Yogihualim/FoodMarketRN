@@ -87,5 +87,6 @@ const styles = StyleSheet.create({
     paddingTop: 15,
     paddingBottom: 13,
     justifyContent: 'space-around',
+    elevation: 10,
   },
 });

@@ -1,26 +1,24 @@
 import {ScrollView, StyleSheet, Text, View} from 'react-native';
 import React, {useState} from 'react';
-import {EmptyOrder, OrderTabSection, Header, Gap} from '../../components';
+import {OrderTabSection, Header, Gap, EmptyOrder} from '../../components';
 
 const Order = () => {
-  const [isEmpty] = useState(false);
+  const [isEmpty] = useState(true);
   return (
-    <ScrollView>
-      <View style={styles.page}>
-        {isEmpty ? (
-          <EmptyOrder />
-        ) : (
-          <View style={styles.content}>
-            <Header
-              title="Your Orders"
-              subTitle="Wait for the best meals"></Header>
-            <View style={styles.tabContainer}>
-              <OrderTabSection />
-            </View>
+    <View style={styles.page}>
+      {isEmpty ? (
+        <EmptyOrder />
+      ) : (
+        <View style={styles.content}>
+          <Header
+            title="Your Orders"
+            subTitle="Wait for the best meals"></Header>
+          <View style={styles.tabContainer}>
+            <OrderTabSection />
           </View>
-        )}
-      </View>
-    </ScrollView>
+        </View>
+      )}
+    </View>
   );
 };
 

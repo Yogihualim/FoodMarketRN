@@ -20,7 +20,7 @@ const renderTabBar = props => (
       height: 3,
       width: '0.2%',
     }}
-    style={{backgroundColor: 'white', elevation: 0}}
+    style={{backgroundColor: 'white', elevation: 1}}
     tabStyle={{width: 'auto'}}
     renderLabel={({route, focused, color}) => (
       <Text

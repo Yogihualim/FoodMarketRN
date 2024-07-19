@@ -17,12 +17,12 @@ const SuccessOrder = ({navigation}) => {
       <View style={styles.buttonContainer}>
         <Button
           text="Order Other Food"
-          onPress={() => navigation.replace('Home')}
+          onPress={() => navigation.replace('MainApp')}
         />
         <Gap height={8} />
         <Button
           text="View My Order"
-          onPress={() => navigation.replace('Home')}
+          onPress={() => navigation.replace('MainApp', {screen: 'Order'})}
           color="#8D92A3"
           textColor="white"
         />
@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: 'white',
   },
   title: {
     fontSize: 20,

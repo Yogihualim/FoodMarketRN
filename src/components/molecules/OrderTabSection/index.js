@@ -18,9 +18,9 @@ const renderTabBar = props => (
     indicatorStyle={{
       backgroundColor: '#020202',
       height: 3,
-      width: '0.2%',
+      width: '0.3%',
     }}
-    style={{backgroundColor: 'white', elevation: 0}}
+    style={{backgroundColor: 'white', elevation: 1}}
     tabStyle={{width: 'auto'}}
     renderLabel={({route, focused, color}) => (
       <Text
@@ -42,7 +42,7 @@ const InProgress = () => {
         image={FoodDummy1}
         name={'Salad Sehat'}
         price={'49.000'}
-        onPress={() => navigation.navigate('FoodDetail')}
+        onPress={() => navigation.navigate('OrderSummary')}
         type="in-progress"
         items={3}
       />
@@ -50,7 +50,7 @@ const InProgress = () => {
         image={FoodDummy2}
         name={'Soup Bumil'}
         price={'69.000'}
-        onPress={() => navigation.navigate('FoodDetail')}
+        onPress={() => navigation.navigate('OrderSummary')}
         type="in-progress"
         items={3}
       />
@@ -58,7 +58,7 @@ const InProgress = () => {
         image={FoodDummy3}
         name={'Avocado Salad'}
         price={'49.000'}
-        onPress={() => navigation.navigate('FoodDetail')}
+        onPress={() => navigation.navigate('OrderSummary')}
         type="in-progress"
         items={3}
       />
@@ -66,7 +66,7 @@ const InProgress = () => {
         image={FoodDummy4}
         name={'Ice Cream Walls'}
         price={'9.000'}
-        onPress={() => navigation.navigate('FoodDetail')}
+        onPress={() => navigation.navigate('OrderSummary')}
         type="in-progress"
         items={3}
       />
@@ -74,7 +74,7 @@ const InProgress = () => {
         image={FoodDummy5}
         name={'Ice Coffee Latte '}
         price={'6.000'}
-        onPress={() => navigation.navigate('FoodDetail')}
+        onPress={() => navigation.navigate('OrderSummary')}
         type="in-progress"
         items={3}
       />
@@ -82,7 +82,7 @@ const InProgress = () => {
         image={FoodDummy6}
         name={'Bawang Kupas/100gr'}
         price={'4.900'}
-        onPress={() => navigation.navigate('FoodDetail')}
+        onPress={() => navigation.navigate('OrderSummary')}
         type="in-progress"
         items={3}
       />
@@ -98,7 +98,7 @@ const PastOrders = () => {
         image={FoodDummy1}
         name={'Salad Sehat'}
         price={'49.000'}
-        onPress={() => navigation.navigate('FoodDetail')}
+        onPress={() => navigation.navigate('OrderDetail')}
         type="past-orders"
         items={3}
         date="Jun 12, 14:00"
@@ -108,7 +108,7 @@ const PastOrders = () => {
         image={FoodDummy2}
         name={'Soup Bumil'}
         price={'69.000'}
-        onPress={() => navigation.navigate('FoodDetail')}
+        onPress={() => navigation.navigate('OrderDetail')}
         type="past-orders"
         items={3}
         date="Jun 12, 14:00"
@@ -118,7 +118,7 @@ const PastOrders = () => {
         image={FoodDummy3}
         name={'Avocado Salad'}
         price={'49.000'}
-        onPress={() => navigation.navigate('FoodDetail')}
+        onPress={() => navigation.navigate('OrderDetail')}
         type="past-orders"
         items={3}
       />

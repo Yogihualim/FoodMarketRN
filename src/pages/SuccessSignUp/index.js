@@ -6,7 +6,7 @@ import {Button, Gap} from '../../components';
 const SuccessSignUp = ({navigation}) => {
   return (
     <View style={styles.page}>
-      <ILSuccessSignUp></ILSuccessSignUp>
+      <ILSuccessSignUp />
       <Gap height={30}></Gap>
       <Gap></Gap>
       <Text style={styles.title}>Yeay! Completed</Text>
@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: 'white',
   },
   title: {
     fontSize: 20,

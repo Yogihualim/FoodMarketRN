@@ -1,4 +1,5 @@
 import IcBack from './ic_back.svg';
+import IcNext from './ic_next.svg';
 import IcHomeOff from './ic_home_off.svg';
 import IcOrderOff from './ic_order_off.svg';
 import IcProfileOff from './ic_profile_off.svg';
@@ -13,6 +14,7 @@ import IcPlus from './ic_btn_plus.svg';
 
 export {
   IcBack,
+  IcNext,
   IcHomeOff,
   IcOrderOff,
   IcProfileOff,
